@@ -282,5 +282,7 @@ export const mockQuestionsAndResponses: Record<
 export const topicGameLinks: Record<string, string> = {
   Force: "https://pelumiabiola.8thwall.app/force-lesson/",
   Collision: "https://pelumiabiola.8thwall.app/secondphysics/",
+  "Introduction to Solar System": "https://michaelborg.8thwall.app/earth-moon/",
+  "Planets": "https://michaelborg.8thwall.app/earth-moon/",
   default: "https://pelumiabiola.8thwall.app/force-lesson/", // fallback URL
 };
