@@ -63,7 +63,7 @@ export function ChatInterface() {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Ask me anything..."
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 text-white"
           />
           <button
             type="submit"

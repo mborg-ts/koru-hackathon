@@ -73,13 +73,13 @@ export function LessonChat({ topicTitle }: { topicTitle: string }) {
           <div className="space-y-2">
             <p className="text-sm text-gray-500">Suggested questions:</p>
             {suggestedQuestions.map((question, index) => (
-              <button
+              <span
                 key={index}
                 onClick={() => setInput(question)}
                 className="block text-sm text-purple-600 hover:text-purple-700"
               >
                 {question}
-              </button>
+              </span>
             ))}
           </div>
         )}
@@ -87,16 +87,14 @@ export function LessonChat({ topicTitle }: { topicTitle: string }) {
         {messages.map((message) => (
           <div
             key={message.id}
-            className={`flex ${
-              message.role === "user" ? "justify-end" : "justify-start"
-            }`}
+            className={`flex ${message.role === "user" ? "justify-end" : "justify-start"
+              }`}
           >
             <div
-              className={`max-w-[80%] rounded-lg p-3 ${
-                message.role === "user"
-                  ? "bg-purple-600 text-white"
-                  : "bg-gray-100"
-              }`}
+              className={`max-w-[80%] rounded-lg p-3 ${message.role === "user"
+                ? "bg-purple-600 text-white"
+                : "bg-gray-100"
+                }`}
             >
               {message.content}
             </div>
@@ -121,7 +119,7 @@ export function LessonChat({ topicTitle }: { topicTitle: string }) {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && handleSend()}
             placeholder="Ask a question..."
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 text-white"
           />
           <button
             onClick={handleSend}

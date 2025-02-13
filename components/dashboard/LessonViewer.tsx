@@ -199,7 +199,7 @@ export function LessonViewer({
               Generate Game for {selectedTopic.title}
             </h3>
             <textarea
-              className="w-full p-3 border rounded-lg mb-4"
+              className="w-full p-3 border rounded-lg mb-4 text-white"
               placeholder="Describe specific AR requirements for this topic..."
               rows={4}
               defaultValue={getARPrompt(selectedTopic.title)}
