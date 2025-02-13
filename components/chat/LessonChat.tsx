@@ -119,7 +119,7 @@ export function LessonChat({ topicTitle }: { topicTitle: string }) {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && handleSend()}
             placeholder="Ask a question..."
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 text-white"
+            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white text-gray-900"
           />
           <button
             onClick={handleSend}
