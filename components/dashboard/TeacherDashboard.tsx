@@ -125,7 +125,7 @@ export function TeacherDashboard({ profile, lessons }: TeacherDashboardProps) {
                 Generate Game for {selectedLesson.title}
               </h3>
               <textarea
-                className="w-full p-3 border rounded-lg mb-4"
+                className="w-full p-3 border rounded-lg mb-4 !text-black"
                 placeholder="Describe the game requirements..."
                 rows={4}
               />

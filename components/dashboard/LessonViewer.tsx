@@ -195,11 +195,14 @@ export function LessonViewer({
       {!isStudent && showARGenerator && selectedTopic && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4">
           <div className="bg-white p-6 rounded-lg w-full max-w-md">
-            <h3 className="text-lg font-semibold mb-4">
-              Generate Game for {selectedTopic.title}
+            <h3 className="text-lg font-semibold mb-4" text-grey-900>
+              Generate AR for {selectedTopic.title}
             </h3>
             <textarea
-              className="w-full p-3 border rounded-lg mb-4 text-white"
+              className="w-full p-3 border rounded-lg mb-4 bg-white text-gray-900 
+              placeholder:text-gray-500 focus:bg-white focus:text-gray-900 
+              appearance-none"
+              style={{ WebkitAppearance: "none" }}
               placeholder="Describe specific AR requirements for this topic..."
               rows={4}
               defaultValue={getARPrompt(selectedTopic.title)}
